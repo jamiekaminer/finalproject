@@ -1,0 +1,97 @@
+
+
+  body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+      }
+
+      #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+ #scene {
+        width: 200px;
+        height: 200px;
+        perspective: 100px;
+        perspective-origin: center top;
+      }
+
+      .orbit {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transform-origin: center center;
+      }
+
+
+     .planet {
+     	display: block;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px; 
+        background-size: 200px 200px;
+      }
+
+      #p1{
+      	background-image: url('mercury.png');
+      	transform: rotateY(0deg) translateZ(500px);
+      }
+
+       #p2{
+      	background-image: url('venus.png');
+      	transform: rotateY(45deg) translateZ(500px) ;
+
+      }
+       #p3{
+      	background-image: url('earth.png');
+      	transform: rotateY(90deg) translateZ(500px);
+
+      }
+
+       #p4{
+      	background-image: url('mars.png');
+      	transform: rotateY(135deg) translateZ(500px);
+      }
+
+      #p5{
+      	background-image: url('jupiter.png');
+      	transform: rotateY(180deg) translateZ(500px);
+      }
+
+       #p6{
+      	background-image: url('saturn.png');
+      	transform: rotateY(225deg) translateZ(500px);
+      }
+
+       #p7{
+      	background-image: url('uranus.png');
+      	transform: rotateY(270deg) translateZ(500px);
+      }
+       #p8{
+      	background-image: url('neptune.png');
+      	transform: rotateY(315deg) translateZ(500px);
+      }
+
+       #scene {
+        transition: perspective 1s;
+      }
+
+      @keyframes rotate {
+        from {transform: rotateY(0deg);}
+        to {transform: rotateY(360deg);}
+      }
+
+      .orbit {
+        animation: rotate 6s linear infinite;
+
+       }
