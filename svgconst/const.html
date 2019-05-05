@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Constellations</title>
+	<style>
+	body{
+		background-color: black;
+	}
+      .element {
+        margin: 3em;
+        fill: white !important;
+        z-index: 0;
+        position: relative;
+
+      }
+
+       #myVideo {
+  position: absolute;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.back{
+position: relative;
+z-index: 0;
+}
+
+.overlay{
+	position: relative;
+	z-index: 1;
+}
+       
+    </style>
+</head>
+<body>
+
+<div class="back">
+<video autoplay muted loop id="myVideo">
+  <source src="night.mp4" type="video/mp4">
+</video>
+</div>
+	
+	<div class="overlay">
+
+	<a href="leo.html"><img class="element" id="leo" src="leo.svg" alt="leo" height="250" width="250"></a>
+    <a href="orion.html"><img class="element" id="orion" src="orion.svg" alt="orion" height="250" width="250"></a>
+    <a href="gemini.html"><img class="element" id="gemini" src="gemini.svg" alt="gemini" height="250" width="250"></a>
+   <a href="virgo.html"> <img class="element" id="virgo" src="virgo.svg" alt="virgo" height="250" width="250"></a>
+    <a href="cas.html"><img class="element" id = "cas" src="casi.svg" alt="cas" height="250" width="250"></a>
+    <a href="bigdip.html"><img class="element" id= "bigdip" src="bigdipper.svg" alt="big dipper" height="250" width="250"></a>
+    </div>
+
+<script type="text/javascript" src="learn.js"></script>
+</body>
+</html>
