@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet"> 
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+       #myVideo {
+  position: absolute;
+  min-width: 100%; 
+  min-height: 100%;
+}
+.back{
+position: relative;
+z-index: -1;
+}
+
+p{
+	color: white;
+	z-index: 1;
+	position: absolute;
+	font-family: 'Gugi', cursive;
+	font-size: 5em;
+}
+
+#one {
+	top: 300px;
+	right: 50px;
+}
+
+#two{
+	top: 500px;
+	right: 450px;
+}
+
+#three{
+	top: 300px;
+	left: 50px;
+}
+    </style>
+  </head>
+  
+  <body>
+  	<div class="back">
+<video autoplay muted loop id="myVideo">
+  <source src="svgconst/night.mp4" type="video/mp4">
+</video>
+</div>
+
+<p id="one">Stars</p>
+<p id="three">Orbit</p>
+<p id="two">Blackhole</p>
+    <script src="three.min.js"></script>
+   <script src="OrbitControls.js"></script>
+    <script src="work.js"></script>
+  </body>
+</html>
